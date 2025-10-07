@@ -1,4 +1,4 @@
-# 🔍 FinSentinel
+# FinSentinel
 
 **AI-Powered Social Media Trading Signals Engine**
 
@@ -8,15 +8,15 @@ FinSentinel monitors financial influencers on social media in real-time, analyze
 
 ## 🎯 What FinSentinel Does
 
-- **🐦 Real-time Tweet Monitoring**: Tracks 12+ financial influencers (Elon Musk, Cathie Wood, Michael Saylor, etc.)
-- **🧠 AI Sentiment Analysis**: Uses GPT-4/Claude to understand nuanced market sentiment and intent
-- **📊 Asset Detection**: Maps mentions to 50+ stocks and crypto assets using NER and semantic similarity
-- **🎯 Trading Signals**: Generates BUY/SELL/HOLD signals with confidence scores and detailed reasoning
-- **📈 Live Dashboard**: Beautiful Streamlit interface with real-time charts and signal tracking
-- **🔔 Smart Alerts**: Slack/Discord notifications for high-confidence signals
-- **💾 Data Persistence**: SQLite database with performance tracking and historical analysis
+- **Real-time Tweet Monitoring**: Tracks 12+ financial influencers (Elon Musk, Cathie Wood, Michael Saylor, etc.)
+- **AI Sentiment Analysis**: Uses GPT-4/Claude to understand nuanced market sentiment and intent
+- **Asset Detection**: Maps mentions to 50+ stocks and crypto assets using NER and semantic similarity
+- **Trading Signals**: Generates BUY/SELL/HOLD signals with confidence scores and detailed reasoning
+- **Live Dashboard**: Beautiful Streamlit interface with real-time charts and signal tracking
+- **Smart Alerts**: Slack/Discord notifications for high-confidence signals
+- **Data Persistence**: SQLite database with performance tracking and historical analysis
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -76,7 +76,7 @@ Open your browser to `http://localhost:8501` to see the live dashboard with:
 - Influencer performance metrics
 - Signal history and filtering
 
-## 📋 Example Output
+## Example Output
 
 ```
 ===== FINSENTINEL SIGNAL =====
@@ -91,7 +91,7 @@ Reasoning: Elon Musk's positive announcements about Tesla battery technology his
 ==============================
 ```
 
-## 🧠 System Architecture
+## System Architecture
 
 ```mermaid
 graph TD
@@ -108,7 +108,7 @@ graph TD
     H -->|Coordinates| D
 ```
 
-### 🔧 Core Components
+### Core Components
 
 1. **Tweet Listener Agent** (`agents/tweet_listener.py`)
    - Monitors 12+ financial influencers via Twitter API
@@ -141,7 +141,7 @@ graph TD
    - Interactive charts and filters
    - Influencer performance tracking
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### Command Line Options
 
@@ -183,14 +183,14 @@ result = sentiment_agent.analyze_sentiment(
 print(f"Sentiment: {result['sentiment']} ({result['confidence']:.2f})")
 ```
 
-## 📊 Monitored Influencers
+## Monitored Influencers
 
-- **🚗 Tech CEOs**: Elon Musk, Tim Cook
-- **💰 Investors**: Cathie Wood, Chamath Palihapitiya, Michael Saylor
-- **📰 Financial Media**: Bloomberg, WSJ, Reuters, CoinDesk
-- **🔗 Crypto Thought Leaders**: Naval Ravikant, Anthony Pompliano
+- **Tech CEOs**: Elon Musk, Tim Cook
+- **Investors**: Cathie Wood, Chamath Palihapitiya, Michael Saylor
+- **Financial Media**: Bloomberg, WSJ, Reuters, CoinDesk
+- **Crypto Thought Leaders**: Naval Ravikant, Anthony Pompliano
 
-## 🎯 Supported Assets
+## Supported Assets
 
 ### Stocks (30+)
 TSLA, AAPL, MSFT, NVDA, GOOGL, META, AMZN, NFLX, COIN, PYPL, SQ, SHOP, ZM, and more
@@ -198,7 +198,7 @@ TSLA, AAPL, MSFT, NVDA, GOOGL, META, AMZN, NFLX, COIN, PYPL, SQ, SHOP, ZM, and m
 ### Crypto (15+)
 BTC, ETH, SOL, ADA, MATIC, LINK, DOGE, SHIB, AVAX, DOT, and more
 
-## 🚨 Alert Examples
+## Alert Examples
 
 ### Slack Alert
 ```
@@ -219,7 +219,7 @@ Rich embed with color coding, charts, and direct links to asset prices.
 - **Coverage**: 12 influencers, 50+ assets, 24/7 monitoring
 - **Scalability**: Processes 100+ tweets/hour efficiently
 
-## 🛠️ Configuration
+## Configuration
 
 ### Asset Configuration (`config.py`)
 ```python
@@ -244,7 +244,7 @@ DASHBOARD_REFRESH_INTERVAL = 30  # seconds
 MAX_TWEETS_DISPLAY = 100
 ```
 
-## 🔍 Monitoring & Debugging
+## Monitoring & Debugging
 
 ### Logs
 - Application logs: `finsentinel.log`
@@ -264,7 +264,7 @@ FROM tweets t JOIN trading_signals ts ON t.tweet_id = ts.tweet_id
 GROUP BY influencer;
 ```
 
-## 🚧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -290,7 +290,7 @@ GROUP BY influencer;
    pip install torch --index-url https://download.pytorch.org/whl/cpu
    ```
 
-## 🎓 Technical Deep Dive
+## Technical Deep Dive
 
 ### AI Pipeline Details
 
@@ -316,7 +316,7 @@ GROUP BY influencer;
 - **Database Optimization**: Indexed queries, connection pooling
 - **Smart Filtering**: Early filtering to reduce processing
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Deployment
 
@@ -348,7 +348,7 @@ export DATABASE_PATH=/data/finsentinel.db
 - **Heroku**: Easy deployment with Postgres addon
 - **DigitalOcean**: Droplets + Managed Databases
 
-## 📚 API Documentation
+## API Documentation
 
 ### REST API (Optional Extension)
 
@@ -368,7 +368,7 @@ export DATABASE_PATH=/data/finsentinel.db
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -389,11 +389,11 @@ python -m pytest tests/
 black . && flake8 .
 ```
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **Important**: FinSentinel is for educational and research purposes. Social media sentiment analysis should not be your only investment strategy. Always:
 
@@ -403,13 +403,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Never invest more than you can afford to lose
 - Past performance doesn't guarantee future results
 
-## 🙋‍♂️ Support
+## Support
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/finsentinel/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/finsentinel/discussions)
 - **Email**: your.email@example.com
 
-## 🌟 Star History
+## Star History
 
 If you find FinSentinel useful, please ⭐ star the repository!
 
